@@ -4,6 +4,7 @@ import com.leandroreis.personapi.dto.response.MessageResponseDTO;
 import com.leandroreis.personapi.dto.request.PersonDTO;
 import com.leandroreis.personapi.exception.PersonNotFoundException;
 import com.leandroreis.personapi.service.PersonService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +31,7 @@ public class PersonController {
 
     @GetMapping
     public List<PersonDTO> listAll(){
+
         return personService.listAll();
     }
 
