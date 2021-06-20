@@ -1,4 +1,4 @@
-package com.leandroreis.personapi.dto;
+package com.leandroreis.personapi.dto.response;
 
 import lombok.Builder;
 import lombok.Data;

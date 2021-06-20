@@ -1,8 +1,7 @@
 package com.leandroreis.personapi.controller;
 
-import com.leandroreis.personapi.dto.MessageResponseDTO;
+import com.leandroreis.personapi.dto.response.MessageResponseDTO;
 import com.leandroreis.personapi.dto.request.PersonDTO;
-import com.leandroreis.personapi.entity.Person;
 import com.leandroreis.personapi.exception.PersonNotFoundException;
 import com.leandroreis.personapi.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;

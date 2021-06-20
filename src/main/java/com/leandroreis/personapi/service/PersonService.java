@@ -1,6 +1,6 @@
 package com.leandroreis.personapi.service;
 
-import com.leandroreis.personapi.dto.MessageResponseDTO;
+import com.leandroreis.personapi.dto.response.MessageResponseDTO;
 import com.leandroreis.personapi.dto.request.PersonDTO;
 import com.leandroreis.personapi.entity.Person;
 import com.leandroreis.personapi.exception.PersonNotFoundException;
@@ -10,7 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -18,7 +17,7 @@ public class PersonService {
 
     private PersonRepository personRepository;
 
-    private final personMapper personMapper = PersonMapper.INSTANCE;
+    private final PersonMapper personMapper = PersonMapper.INSTANCE;
 
     @Autowired
     public PersonService(PersonRepository personRepository){
